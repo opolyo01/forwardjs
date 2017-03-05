@@ -185,7 +185,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={5} textColor="secondary" caps>React Views with Windowing</Heading>
           <a href="https://bvaughn.github.io/forward-js-2017/#/4/2">React Views with Windowing Slides</a>
-          <a href="https://forwardjs.com/#">Forward JS Videos will go here</a>
+          <a href="https://forwardjs.com/#">Forward JS Videos</a>
         </Slide>
       </Deck>
     );
