@@ -1,0 +1,10 @@
+function *gen() {
+	console.log("Hello");
+	yield 1;
+	console.log("World");
+}
+
+var it = gen();
+it.next(); //Hello {value: 1, done: false}
+it.next(); //World {value: undefined, done: true}
+// we have one more next then yield

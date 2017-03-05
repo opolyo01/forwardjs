@@ -1,0 +1,10 @@
+var obsv = Rx.Observable.fromEvent(btn, "click");
+
+obsv
+	.map((evt) => evt.target.className)
+	.filter((className) => /foobar/.test(className))
+	.distinctUntilChanged()
+	.subscribe((data) => {
+		const className = data[1];
+		console.log(className);
+	});

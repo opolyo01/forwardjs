@@ -1,0 +1,19 @@
+function getData(d) {
+	return new Promise(function(resolve, reject){
+		setTimeout(function(){
+			resolve(d);
+		}, 1000);
+	});
+}
+
+let x;
+
+getData(10)
+.then((num1) => {
+	x = 1 + num1;
+	return getData(30);
+})
+.then((num2) => {
+	return getData(x + 1 + num2);
+})
+.then((answer) => console.log(answer));

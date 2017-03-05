@@ -1,0 +1,9 @@
+var p = trySomeAsyncThing();
+
+Promise.race([p, new Promise((_, reject) => {
+	setTimeout(() => reject("Timeout!!"), 3000)
+})])
+.then(success, error);
+
+Promise.all([doTask1(), doTask2(), doTask3()])
+		.then((results) => console.log(results));

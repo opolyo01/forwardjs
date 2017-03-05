@@ -1,0 +1,15 @@
+function one(cb){
+	console.log("1");
+	setTimeout(cb, 100);
+}
+function two(cb){
+	console.log("2");
+	setTimeout(cb, 100);
+}
+function three(cb){
+	console.log("3");
+}
+
+one(function(){
+	two(three);
+});
