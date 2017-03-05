@@ -179,7 +179,7 @@ export default class Presentation extends React.Component {
             <ListItem>Deliver ATF (above-the-fold) in 14KB</ListItem>
             <ListItem>Avoid HTTP to HTTPS redirects (use HSTS, Header, hstspreload.org/)</ListItem>
             <ListItem>Use Brotli or Zopfli to save from 8-14% on data transfer</ListItem>
-            <ListItem>Create low res images for initial load and replace them incementally</ListItem>
+            <ListItem>Create low res images for initial load and replace them incrementally</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
