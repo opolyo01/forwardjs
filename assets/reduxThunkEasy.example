@@ -1,0 +1,9 @@
+function extraSum(x){
+    return function sum(a, b){
+        return a + b + x;
+    };
+}
+
+var thunk = extraSum();
+thunk.withExtraArgument = extraSum;
+thunk.withExtraArgument(10)(20,30);

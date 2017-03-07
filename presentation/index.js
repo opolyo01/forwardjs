@@ -108,6 +108,22 @@ export default class Presentation extends React.Component {
             style={{fontSize:"1.2rem"}}
           />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary" caps>Redux Thunk</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/reduxThunk.example")}
+            style={{fontSize:"1.0rem"}}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>Redux Thunk Explanation</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/reduxThunkEasy.example")}
+            style={{fontSize:"1.0rem"}}
+          />
+        </Slide>
          <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>Promises</Heading>
           <CodePane
@@ -172,6 +188,15 @@ export default class Presentation extends React.Component {
             style={{fontSize:"1.0rem"}}
           />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary" caps>Redux Saga</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../assets/reduxSaga.example")}
+            style={{fontSize:"1.0rem"}}
+          />
+        </Slide>
+        
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>MobileWeb Performance Optimizations</Heading>
           <List>
